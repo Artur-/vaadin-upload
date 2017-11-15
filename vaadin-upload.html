@@ -10,6 +10,7 @@ This program is available under Apache License Version 2.0, available at https:/
 <link rel="import" href="../vaadin-button/vaadin-button.html">
 <link rel="import" href="vaadin-upload-icons.html">
 <link rel="import" href="vaadin-upload-file.html">
+<link rel="import" href="../vaadin-development-mode-detector/vaadin-development-mode-detector.html">
 
 <dom-module id="vaadin-upload-default-theme" theme-for="vaadin-upload">
   <template>
@@ -927,6 +928,7 @@ This program is available under Apache License Version 2.0, available at https:/
        * @namespace Vaadin
        */
       window.Vaadin = window.Vaadin || {};
+      Vaadin.importIfDevelopmentMode("vaadin-usage-statistics/vaadin-usage-statistics.html");
       Vaadin.UploadElement = UploadElement;
     }
   </script>
